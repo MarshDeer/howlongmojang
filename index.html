@@ -39,16 +39,15 @@
 		}
 
 		.window {
-			background:				linear-gradient(#0008,#0008),url(img/vnp.jpg);
-			background-size:			cover;
-			background-position:			center;
-			margin:					auto auto;
+			margin:					1em auto;
 			border-radius:				15px;
 			width:					60vw;
 			box-shadow:				1em 1em 1em #000a;
 			padding:				1em;
 			text-shadow:				1px 1px #000a;
 		}
+			#fletchingtable {background:linear-gradient(#0008,#0008),url(img/vnp.jpg);background-size:cover;background-position:center;}
+			#modsupport {background:linear-gradient(#0008,#0008),url(img/mod.png);background-size:cover;background-position:center;}
 
 		.window img {
 			filter:					drop-shadow(0 0 0.75rem #000a);
@@ -61,7 +60,7 @@
 			text-shadow:				1px 1px #3F3F00;
 		}
 
-		#timer {
+		.timer {
 			font:					3em minetitle, monospace;
 			font-weight:				bold;
 			color:					yellow;
@@ -70,28 +69,37 @@
 		
 		#dc {
 			margin:					2em auto;
-			padding:				0.5em;
+			padding:				1em;
 			background-color:			#000a;
 			border-radius:				15px;
 			box-shadow:				1em 1em 1em #000a;
 			width:					40vw;
 		}
 
-		@media screen and (max-width: 700px) {
-			#timer {
-				font-size:			2em;
-			}
+		@media screen and (max-width: 725px) {
+			#timer {font-size:2em;}
 		}
 	</style>
 
 	<body>
-		<div class="window">
+		<!-- Cards -->
+		<div id="fletchingtable" class="window">
 			<p>It has been<br>
-			<span id="timer">Too long</span><br>
+			<span id="fletch" class="timer">Too long</span><br>
 			Since Mojang said they had "a great idea" for fletching tables in the <a href="https://www.minecraft.net/en-us/article/minecraft-snapshot-19w11">"next major themed update"</a>.<br>
 			</p>
 			<img src="img/ft.png">
-			<p><a href="https://www.reddit.com/r/Minecraft/comments/un926g/dont_let_the_news_that_fireflies_wont_be_in">We're still waiting.</a></p>
+			<p><a>We're still waiting.</a></p>
+		</div>
+
+		<div id="modsupport" class="window">
+			<p>It has been<br>
+			<span id="mods" class="timer">Too long</span><br>
+			Since Mojang last said they were <a href="https://twitter.com/Dinnerbone/status/593841459222212608">still working</a> on the Plugin API for Java.<br>
+			They later said <a href="https://youtu.be/ZtOLw1LAarE">they will never make something better than Forge</a>, and official modding support doesn't exist yet.
+			</p>
+			<img src="img/cb.png">
+			<p><a>We're still waiting.</a></p>
 		</div>
 		<div id="dc">
 			<p><a href="http://minecraft.net">Minecraft</a> is copyright <a href="http://mojang.com">Mojang Studios</a> and is not affiliated with this site in any way shape or form.</p>
@@ -103,11 +111,16 @@
 	<script src="js/countdown.js"></script>
 	<script src="js/moment-countdown.min.js"></script>
 	<script>
-		var timer = document.getElementById('timer');
+		var fletch = document.getElementById('fletch');
+			var fletchdate = "2019-03-13";
+		var mods = document.getElementById('mods');
+			var modsdate = "2015-04-30"
 
 		var render = function() {
-			var since = moment("2019-03-13").countdown().toString();
-			timer.innerHTML = since;
+			var since = moment(fletchdate).countdown().toString();
+			fletch.innerHTML = since;
+			var since = moment(modsdate).countdown().toString();
+			mods.innerHTML = since;
 		}
 
 		render();
