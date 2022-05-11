@@ -1,0 +1,109 @@
+<!doctype=HTML>
+<html>
+	<head>
+		<title>Mojang is not a small indie company</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Remember when Mojang wanted to make games instead of money?">
+		<!-- Embedding -->
+		<meta property="og:image" content="img/ft.png">
+		<meta property="og:image:width" content="300">
+		<meta property="og:image:height" content="300">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary">
+		<meta property="twitter:title" content="Mojang isn't particularly great at fulfilling promises">
+		<meta property="twitter:url" content="https://marshdeer.github.io/howlongmojang/">
+		<meta property="twitter:description" content="We're still waiting">
+	</head>
+	
+	<style>
+		@font-face {
+			font-family:				'minecraft';
+			src:					url(fonts/mcru.ttf);
+		}
+
+		@font-face {
+			font-family:				'minetitle';
+			src:					url(fonts/mctit.ttf);
+		}
+
+		html {
+			text-align:				center;
+			font:					13px minecraft, monospace;
+			color:					white;
+		}
+
+		body {
+			background-image:			url(img/dirt.png);
+			background-size:			80px;
+			background-repeat:			repeat;
+		}
+
+		.window {
+			background:				linear-gradient(#0008,#0008),url(img/vnp.jpg);
+			background-size:			cover;
+			background-position:			center;
+			margin:					auto auto;
+			border-radius:				15px;
+			width:					60vw;
+			box-shadow:				1em 1em 1em #000a;
+			padding:				1em;
+			text-shadow:				1px 1px #000a;
+		}
+
+		.window img {
+			filter:					drop-shadow(0 0 0.75rem #000a);
+			width:					50%;
+		}
+
+		a {
+			text-decoration:			none;
+			color:					yellow;
+			text-shadow:				1px 1px #3F3F00;
+		}
+
+		#timer {
+			font:					3em minetitle, monospace;
+			font-weight:				bold;
+			color:					yellow;
+			text-shadow:				3px 3px #3F3F00;
+		}
+		
+		#dc {
+			margin:					2em auto;
+			padding:				0.5em;
+			background-color:			#000a;
+			border-radius:				15px;
+			box-shadow:				1em 1em 1em #000a;
+			width:					40vw;
+		}
+	</style>
+
+	<body>
+		<div class="window">
+			<p>It has been<br>
+			<span id="timer">Too long</span><br>
+			Since Mojang said they had "a great idea" for fletching tables in the <a href="https://www.minecraft.net/en-us/article/minecraft-snapshot-19w11">"next major themed update"</a>.<br>
+			</p>
+			<img src="img/ft.png">
+			<p><a href="https://www.reddit.com/r/Minecraft/comments/un926g/dont_let_the_news_that_fireflies_wont_be_in">We're still waiting.</a></p>
+		</div>
+		<div id="dc">
+			<p><a href="http://minecraft.net">Minecraft</a> is copyright <a href="http://mojang.com">Mojang Studios</a> and is not affiliated with this site in any way shape or form.</p>
+		</div>
+	</body>
+
+	<script src="js/moment.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/moment-countdown.min.js"></script>
+	<script>
+		var timer = document.getElementById('timer');
+
+		var render = function() {
+			var since = moment("2019-03-13").countdown().toString();
+			timer.innerHTML = since;
+		}
+
+		render();
+		this.interval = setInterval(render, 1000);
+	</script>
+</html>
