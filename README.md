@@ -5,6 +5,7 @@
 ## Countdown items
 * Fletching Table functionality
 * Official Plugin API
+* "Hurt Tilt" Bug
 
 ## Screenshot
 <img src="img/scrot.png" style="width:200px">
