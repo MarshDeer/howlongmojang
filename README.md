@@ -4,6 +4,7 @@
 
 ## Countdown items
 * Birch Forest overhaul
+* Bundles
 * Archeology System
 * Fletching Table functionality
 * Official Plugin API
