@@ -50,6 +50,7 @@
 			#fletchingtable {background:linear-gradient(#0008,#0008),url(img/fletch-bg.jpg);background-size:cover;background-position:center;}
 			#modsupport {background:linear-gradient(#0008,#0008),url(img/mod-bg.png);background-size:cover;background-position:center;}
 			#hurtanim {background:linear-gradient(#0008,#0008),url(img/hurt-bg.png);background-size:cover;background-position:center;}
+			#birchforest {background:linear-gradient(#0008,#0008),url(img/birch-bg.png);background-size:cover;background-position:center;}
 
 		.window img {
 			filter:					drop-shadow(0 0 0.75rem #000a);
@@ -85,6 +86,17 @@
 
 	<body>
 		<!-- Cards -->
+		<div id="birchforest" class="window">
+			<p>
+				It has been<br>
+				<span id="birch" class="timer">Too long</span><br>
+				Since Mojang said they wanted to "give Birch Forests a unique identity" during <a href="https://youtu.be/or1DfXdqu3U?list=PLZHdY_46KnYs7_xPM3s5Quc8sojE8fJ4b&t=682">Minecraft Live 2021</a>.<br>
+				In May 11, 2022, they confirmed they have stopped working on Birch Forests during an <a href="https://youtu.be/ixSlQXDOvkM?t=97">"Ask Mojang"</a> video.<br>
+			</p>
+			<img src="img/birch-icon.png">
+			<p><a>We're still waiting.</a></p>
+		</div>
+
 		<div id="fletchingtable" class="window">
 			<p>
 				It has been<br>
@@ -134,6 +146,8 @@
 	<script src="js/countdown.js"></script>
 	<script src="js/moment-countdown.min.js"></script>
 	<script>
+		var birch = document.getElementById('birch');
+			var birchdate = "2021-10-16";
 		var fletch = document.getElementById('fletch');
 			var fletchdate = "2019-03-13";
 		var mods = document.getElementById('mods');
@@ -142,6 +156,8 @@
 			var hurtdate = "2012-08-26"
 
 		var render = function() {
+			var since = moment(birchdate).countdown().toString();
+				birch.innerHTML = since;
 			var since = moment(fletchdate).countdown().toString();
 				fletch.innerHTML = since;
 			var since = moment(modsdate).countdown().toString();
