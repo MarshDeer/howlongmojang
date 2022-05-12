@@ -56,6 +56,7 @@
 			#caves1 {background:linear-gradient(#0008,#0008),url(img/cnc1-bg.png);background-size:cover;background-position:center;}
 			#caves2 {background:linear-gradient(#0008,#0008),url(img/cnc2-bg.png);background-size:cover;background-position:center;}
 			#fletchingtable {background:linear-gradient(#0008,#0008),url(img/fletch-bg.jpg);background-size:cover;background-position:center;}
+			#biome18 {background:linear-gradient(#0008,#0008),url(img/b18-bg.jpg);background-size:cover;background-position:center;}
 			#modsupport {background:linear-gradient(#0008,#0008),url(img/mod-bg.png);background-size:cover;background-position:center;}
 			#hurtanim {background:linear-gradient(#0008,#0008),url(img/hurt-bg.png);background-size:cover;background-position:center;}
 
@@ -112,6 +113,7 @@
 			<img src="img/cnc1-icon.png" style="width:33%;">
 			<p><a>We're still waiting.</a></p>
 		</div>
+
 		<div id="caves2" class="window">
 			<p>
 				It has been<br>
@@ -137,6 +139,26 @@
 			</p>
 			<img src="img/fletch-icon.png">
 			<p><a>We're still waiting.</a></p>
+		</div>
+
+		<div id="biome18" class="window">
+			<p>
+				It has been<br>
+				<span id="bio18" class="timer">Too long</span><br>
+				Since the community <a href="https://youtu.be/UGbYcN2Zs4I">voted to update Taigas</a> during MINECON Earth 2018.
+			</p>
+			<p>
+				In September 17, 2018, Mojang said <a href="https://www.reddit.com/r/Minecraft/comments/9gl167/biome_chooser_announcement_trailer/e650hxt/?utm_source=reddit&utm_medium=web2x&context=3">other biomes in the vote would get updated too</a> on a Reddit thread</a>.<br>
+				In September 17, 2019, they tweeted that they <a href="https://twitter.com/_LadyAgnes/status/1173997560308129792">"haven't forgotten"</a> about these biomes.
+			</p>
+			<p>
+				Neither Savannas nor Deserts were announced as a part of the Wild Update.<br>
+				Mojang has the resources to add all vote options. It's just marketing through manufactured engagement on social media.
+			</p>
+			<img src="img/b18-icon.png">
+			<p>
+				<a>We're still waiting.</a><br>
+			</p>
 		</div>
 
 		<div id="modsupport" class="window">
@@ -186,6 +208,8 @@
 			var cnc2date = "2020-10-03";
 		var fletch = document.getElementById('fletch');
 			var fletchdate = "2019-03-13";
+		var bio18 = document.getElementById('bio18');
+			var bio18date = "2018-09-29";
 		var mods = document.getElementById('mods');
 			var modsdate = "2015-04-30"
 		var hurt = document.getElementById('hurt');
@@ -200,6 +224,8 @@
 				cnc2.innerHTML = since;
 			var since = moment(fletchdate).countdown().toString();
 				fletch.innerHTML = since;
+			var since = moment(bio18date).countdown().toString();
+				bio18.innerHTML = since;
 			var since = moment(modsdate).countdown().toString();
 				mods.innerHTML = since;
 			var since = moment(hurtdate).countdown().toString();
