@@ -1,4 +1,5 @@
 # How long, Mojang?
+<img src="img/favicon/apple-touch-icon.png">
 ## Demo Link
 [Live Demo](http://MarshDeer.github.io/howlongmojang)
 
@@ -13,7 +14,7 @@
 * "Hurt Tilt" Bug
 
 ## Screenshot
-<img src="img/scrot.png" style="width:300px">
+<img src="img/scrot.png" style="width:300px;">
 
 ## Inspiration
 Loosely inspired by ["How long since Google said a Google Drive Linux client is coming](https://abevoelker.github.io/how-long-since-google-said-a-google-drive-linux-client-is-coming/) by [Abe Voelker](https://github.com/abevoelker)
