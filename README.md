@@ -4,6 +4,7 @@
 
 ## Countdown items
 * Birch Forest overhaul
+* Archeology System
 * Fletching Table functionality
 * Official Plugin API
 * "Hurt Tilt" Bug
