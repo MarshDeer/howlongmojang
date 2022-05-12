@@ -55,6 +55,7 @@
 			#birchforest {background:linear-gradient(#0008,#0008),url(img/birch-bg.png);background-size:cover;background-position:center;}
 			#caves1 {background:linear-gradient(#0008,#0008),url(img/cnc1-bg.png);background-size:cover;background-position:center;}
 			#caves2 {background:linear-gradient(#0008,#0008),url(img/cnc2-bg.png);background-size:cover;background-position:center;}
+			#biome19 {background:linear-gradient(#0008,#0008),url(img/b19-bg.png);background-size:cover;background-position:center;}
 			#fletchingtable {background:linear-gradient(#0008,#0008),url(img/fletch-bg.jpg);background-size:cover;background-position:center;}
 			#biome18 {background:linear-gradient(#0008,#0008),url(img/b18-bg.jpg);background-size:cover;background-position:center;}
 			#modsupport {background:linear-gradient(#0008,#0008),url(img/mod-bg.png);background-size:cover;background-position:center;}
@@ -121,7 +122,7 @@
 				Since Mojang <a href="https://youtu.be/DBvZ2Iqmm3M&t=2166">announced the Archeology System</a> during Minecraft Live 2020.
 			</p>
 			<p>
-			In April 14, 2021, they announced that the feature had been <a href="https://www.youtube.com/watch?v=6YgKUZnUyak&t=286s">postponed for Caves and Cliffs Part 2</a> during an announcement video</a>.<br>
+				In April 14, 2021, they announced that the feature had been <a href="https://www.youtube.com/watch?v=6YgKUZnUyak&t=286s">postponed for Caves and Cliffs Part 2</a> during an announcement video</a>.<br>
 				In November 17, 2021, they announced that Archeology had been <a href="https://www.minecraft.net/en-us/article/caves---cliffs-update-part-ii-coming">"put in the backburner"</a>.
 			</p>
 			<p>
@@ -129,6 +130,26 @@
 			</p>
 			<img src="img/cnc2-icon.png">
 			<p><a>We're still waiting.</a></p>
+		</div>
+
+		<div id="biome19" class="window">
+			<p>
+				It has been<br>
+				<span id="bio19" class="timer">Too long</span><br>
+				Since the community <a href="https://youtu.be/Q5Z5pMNfmZY">voted to update Mountains</a> during MINECON Live 2019.
+			</p>
+			<p>
+				In September 17, 2019, Mojang tweeted that <a href="https://twitter.com/Cojomax99/status/1173990092169498624">all biomes in the vote</a> would eventually get updated</a>.<br>
+				In October 16, 2021, they followed through, and announced that <a href="https://youtu.be/or1DfXdqu3U?t=716">there would be a Swamps overhaul</a> in the Wild Update!
+			</p>
+			<p>
+				Badlands weren't announced as a part of the Wild Update.<br>
+				Mojang has the resources to add all vote options. It's just marketing through manufactured engagement on social media.
+			</p>
+			<img src="img/b19-icon.png">
+			<p>
+				<a>We're still waiting.</a><br>
+			</p>
 		</div>
 
 		<div id="fletchingtable" class="window">
@@ -211,6 +232,8 @@
 			var cnc1date = "2020-10-03";
 		var cnc2 = document.getElementById('cnc2');
 			var cnc2date = "2020-10-03";
+		var bio19 = document.getElementById('bio19');
+			var bio19date = "2019-09-28";
 		var fletch = document.getElementById('fletch');
 			var fletchdate = "2019-03-13";
 		var bio18 = document.getElementById('bio18');
@@ -227,6 +250,8 @@
 				cnc1.innerHTML = since;
 			var since = moment(cnc2date).countdown().toString();
 				cnc2.innerHTML = since;
+			var since = moment(bio19date).countdown().toString();
+				bio19.innerHTML = since;
 			var since = moment(fletchdate).countdown().toString();
 				fletch.innerHTML = since;
 			var since = moment(bio18date).countdown().toString();
