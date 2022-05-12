@@ -3,6 +3,7 @@
 [Live Demo](http://MarshDeer.github.io/howlongmojang)
 
 ## Countdown items
+* Birch Forest overhaul
 * Fletching Table functionality
 * Official Plugin API
 * "Hurt Tilt" Bug
