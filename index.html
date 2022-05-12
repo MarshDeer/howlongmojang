@@ -34,10 +34,6 @@
 		}
 
 		body {
-/*			background-image:			url(img/dirt.png);
-			background-size:			80px;
-			background-repeat:			repeat;
-*/
 			background:				linear-gradient(#0000,#000a),url(img/dirt.png),repeat;
 			background-size:			80px;
 		}
@@ -57,7 +53,8 @@
 			}
 
 			#birchforest {background:linear-gradient(#0008,#0008),url(img/birch-bg.png);background-size:cover;background-position:center;}
-			#cncpromises {background:linear-gradient(#0008,#0008),url(img/cnc-bg.png);background-size:cover;background-position:center;}
+			#caves1 {background:linear-gradient(#0008,#0008),url(img/cnc-bg.png);background-size:cover;background-position:center;}
+			#caves2 {background:linear-gradient(#0008,#0008),url(img/cnc-bg.png);background-size:cover;background-position:center;}
 			#fletchingtable {background:linear-gradient(#0008,#0008),url(img/fletch-bg.jpg);background-size:cover;background-position:center;}
 			#modsupport {background:linear-gradient(#0008,#0008),url(img/mod-bg.png);background-size:cover;background-position:center;}
 			#hurtanim {background:linear-gradient(#0008,#0008),url(img/hurt-bg.png);background-size:cover;background-position:center;}
@@ -92,27 +89,27 @@
 			<p>
 				It has been<br>
 				<span id="birch" class="timer">Too long</span><br>
-				Since Mojang said they wanted to "give Birch Forests a unique identity" during <a href="https://youtu.be/or1DfXdqu3U&t=682">Minecraft Live 2021</a>.<br>
-				In May 11, 2022, they confirmed they have stopped working on Birch Forests during an <a href="https://youtu.be/ixSlQXDOvkM?t=97">"Ask Mojang"</a> video.<br>
+				Since Mojang said they wanted to <a href="https://youtu.be/or1DfXdqu3U&t=682">"give Birch Forests a unique identity"</a> during Minecraft Live 2021.<br>
+				In May 11, 2022, they confirmed they have <a href="https://youtu.be/ixSlQXDOvkM?t=97">stopped working on Birch Forests</a> during an "Ask Mojang" video.<br>
 			</p>
 			<img src="img/birch-icon.png">
 			<p><a>We're still waiting.</a></p>
 		</div>
 
-		<div id="cncpromises" class="window">
+		<div id="caves2" class="window">
 			<p>
 				It has been<br>
-				<span id="cnc" class="timer">Too long</span><br>
-				Since Mojang announced the Archeology System during <a href="https://youtu.be/DBvZ2Iqmm3M&t=2166">Minecraft Live 2020</a>.
+				<span id="cnc2" class="timer">Too long</span><br>
+				Since Mojang <a href="https://youtu.be/DBvZ2Iqmm3M&t=2166">announced the Archeology System</a> during Minecraft Live 2020.
 			</p>
 			<p>
-				In April 14, 2021, they announced that the feature had been postponed for Caves and Cliffs part 2 during an <a href="https://www.youtube.com/watch?v=6YgKUZnUyak&t=286s">announcement video</a>.<br>
+			In April 14, 2021, they announced that the feature had been <a href="https://www.youtube.com/watch?v=6YgKUZnUyak&t=286s">postponed for Caves and Cliffs Part 2</a> during an announcement video</a>.<br>
 				In November 17, 2021, they announced that Archeology had been <a href="https://www.minecraft.net/en-us/article/caves---cliffs-update-part-ii-coming">"put in the backburner"</a>.
 			</p>
 			<p>
 				Archeology was not announced as a part of the Wild Update.
 			</p>
-			<img src="img/cnc-icon1.png">
+			<img src="img/cnc2-icon.png">
 			<p><a>We're still waiting.</a></p>
 		</div>
 
@@ -141,14 +138,14 @@
 			<p>
 				It has been<br>
 				<span id="hurt" class="timer">Too long</span><br>
-				Since update <a href="https://minecraft.fandom.com/wiki/Java_Edition_1.3.1#General_2">1.3.1</a> accidentally broke Minecraft's "Damage Tilt" feature.<br>
+				Since <a href="https://minecraft.fandom.com/wiki/Java_Edition_1.3.1#General_2">update 1.3.1</a> accidentally broke Minecraft's "Damage Tilt" feature.<br>
 				On September 2020, they deemed the issue a <a href="https://bugs.mojang.com/browse/MC-26678">"Won't Fix"</a>.
 			</p>
 			<p>
 				On October 2020, Shivaxi made a <a href="https://youtu.be/pAJPc71YOnY">video</a> explaining this bug and released a <a href="https://github.com/Charles445/DamageTilt">mod</a> to fix it.<br>
 				Mojang refuses to fix this issue despite proof of it being a simple solution.
 			</p>
-			<img src="img/hurt-icon.gif">
+			<img src="img/hurt-icon.gif" style="width:33%;">
 			<p><a>We're still waiting.</a></p>
 		</div>
 
@@ -167,6 +164,8 @@
 	<script>
 		var birch = document.getElementById('birch');
 			var birchdate = "2021-10-16";
+		var cnc2 = document.getElementById('cnc2');
+			var cnc2date = "2020-10-03";
 		var fletch = document.getElementById('fletch');
 			var fletchdate = "2019-03-13";
 		var mods = document.getElementById('mods');
@@ -177,6 +176,8 @@
 		var render = function() {
 			var since = moment(birchdate).countdown().toString();
 				birch.innerHTML = since;
+			var since = moment(cnc2date).countdown().toString();
+				cnc2.innerHTML = since;
 			var since = moment(fletchdate).countdown().toString();
 				fletch.innerHTML = since;
 			var since = moment(modsdate).countdown().toString();
