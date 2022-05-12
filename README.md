@@ -6,7 +6,9 @@
 * Birch Forest overhaul
 * Bundles
 * Archeology System
+* Badlands (2019 Biome Vote)
 * Fletching Table functionality
+* Savannas and Deserts (2018 Biome Vote)
 * Official Plugin API
 * "Hurt Tilt" Bug
 
