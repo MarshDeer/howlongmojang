@@ -47,14 +47,21 @@
 			padding:				1em;
 			text-shadow:				1px 1px #000a;
 		}
+
+			.window img {
+				filter:					drop-shadow(0 0 0.75rem #000a);
+				width:					50%;
+			}
+
 			#fletchingtable {background:linear-gradient(#0008,#0008),url(img/fletch-bg.jpg);background-size:cover;background-position:center;}
 			#modsupport {background:linear-gradient(#0008,#0008),url(img/mod-bg.png);background-size:cover;background-position:center;}
 			#hurtanim {background:linear-gradient(#0008,#0008),url(img/hurt-bg.png);background-size:cover;background-position:center;}
 			#birchforest {background:linear-gradient(#0008,#0008),url(img/birch-bg.png);background-size:cover;background-position:center;}
 
-		.window img {
-			filter:					drop-shadow(0 0 0.75rem #000a);
-			width:					50%;
+		.footer {
+			margin:					2em auto;
+			background-color:			#000a;
+			width:					40vw;
 		}
 
 		a {
@@ -70,15 +77,6 @@
 			text-shadow:				3px 3px #3F3F00;
 		}
 		
-		.footer {
-			margin:					2em auto;
-			padding:				1em;
-			background-color:			#000a;
-			border-radius:				15px;
-			box-shadow:				1em 1em 1em #000a;
-			width:					40vw;
-		}
-
 		@media screen and (max-width: 725px) {
 			#timer {font-size:2em;}
 		}
@@ -133,11 +131,11 @@
 			<p><a>We're still waiting.</a></p>
 		</div>
 
-		<div class="footer">
+		<div class="window footer">
 			<p>Any other Mojang broken promises you want a timer for? Ask me <a href="http://github.com/MarshDeer/howlongmojang/issues">here</a> or fork the repo <a href="http://github.com/MarshDeer/howlongmojang/fork">here!</a></p>
 		</div>
 
-		<div class="footer">
+		<div class="window footer">
 			<p><a href="http://minecraft.net">Minecraft</a> is copyright <a href="http://mojang.com">Mojang Studios</a> and is not affiliated with this site in any way shape or form.</p>
 		</div>
 	</body>
