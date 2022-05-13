@@ -13,9 +13,9 @@ var fletch = document.getElementById('fletch');
 var bio18 = document.getElementById('bio18');
         var bio18date = "2018-09-29";
 var mods = document.getElementById('mods');
-        var modsdate = "2015-04-30"
+        var modsdate = "2015-04-30T18:16:00";
 var hurt = document.getElementById('hurt');
-        var hurtdate = "2012-08-26"
+        var hurtdate = "2012-08-26";
 
 var render = function() {
         var since = moment(birchdate).countdown().toString();
