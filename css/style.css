@@ -19,7 +19,7 @@
 	body {
 		background:				linear-gradient(#0000,#000a),url(../img/dirt.png),repeat;
 		background-size:			80px;
-		background-attachment:			scroll;
+		background-attachment:			fixed;
 	}
 
 	footer {
