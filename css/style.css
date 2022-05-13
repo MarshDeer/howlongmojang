@@ -28,9 +28,11 @@
 		width:					40vw !important;
 	}
 
-	a {
+	a,
+	em {
 		text-decoration:			none;
-		color:					yellow;
+		color:					yellow !important;
+		font-style:				normal;
 		text-shadow:				1px 1px #3F3F00;
 	}
 
