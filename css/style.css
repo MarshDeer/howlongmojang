@@ -30,7 +30,17 @@
 
 	details summary {
 		list-style:				none;
+		animation:				none !important;
 	}
+
+	details[open] *|*:not(summary *) {
+		animation:				open 0.25s;
+	}
+
+		@keyframes open {
+			from{opacity:0; transform:translateY(-10px);}
+			to{opacity:1; transform:translateY(0);}
+		}
 
 	details summary span.show {
 		display:				none !important;
@@ -65,6 +75,21 @@
 	}
 
 /* Classes */
+	header {
+		position:				absolute;
+		animation:				pop 0.60s infinite;
+		filter:					drop-shadow(0 0 0.75rem #000);
+		top:					0%;
+		width:					100%;
+		font-size:				1.25em;
+	}
+
+	@keyframes pop {
+		from {transform:scale(0.95)}
+		50% {transform:scale(1)}
+		to {transform:scale(0.95)}
+	}
+
 	.window {
 		margin:					2em auto;
 		border-radius:				15px;
