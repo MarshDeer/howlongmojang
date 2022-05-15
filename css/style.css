@@ -28,6 +28,22 @@
 		width:					40vw !important;
 	}
 
+	details summary {
+		list-style:				none;
+	}
+
+	details summary span.show {
+		display:				none !important;
+	}
+
+	details[open] summary span {
+		display:				none;
+	}
+
+	details[open] summary span.show{
+		display:				inline !important;
+	}
+
 	a,
 	em {
 		text-decoration:			none;
