@@ -1,5 +1,7 @@
 var birch = document.getElementById('birch');
         var birchdate = "2021-10-16";
+var firefly = document.getElementById('fire');
+	var firedate = "2021-10-16";
 var cnc1 = document.getElementById('cnc1');
         var cnc1date = "2020-10-03";
 var cnc2 = document.getElementById('cnc2');
@@ -20,6 +22,8 @@ var hurt = document.getElementById('hurt');
 var render = function() {
         var since = moment(birchdate).countdown().toString();
                 birch.innerHTML = since;
+        var since = moment(firedate).countdown().toString();
+                firefly.innerHTML = since;
         var since = moment(cnc1date).countdown().toString();
                 cnc1.innerHTML = since;
         var since = moment(cnc2date).countdown().toString();
