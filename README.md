@@ -6,6 +6,7 @@
 
 ## Countdown items
 * Birch Forest overhaul
+* Fireflies
 * Bundles
 * Archeology System
 * Badlands (2019 Biome Vote)
