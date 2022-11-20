@@ -1,4 +1,5 @@
 # How long, Mojang?
+## [THIS PROJECT IS IN HIATUS UNTIL I BECOME INTERESTED IN MINECRAFT AGAIN]
 <img src="img/favicon/apple-touch-icon.png">
 
 ## Demo Link
