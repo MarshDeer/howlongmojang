@@ -18,6 +18,7 @@ var mods = document.getElementById('mods');
         var modsdate = "2015-04-30T18:16:00";
 var hurt = document.getElementById('hurt');
         var hurtdate = "2012-08-26";
+	var hurtfix = "2022-12-22T12:05:00";
 
 var render = function() {
         var since = moment(birchdate).countdown().toString();
@@ -38,7 +39,7 @@ var render = function() {
                 bio18.innerHTML = since;
         var since = moment(modsdate).countdown().toString();
                 mods.innerHTML = since;
-        var since = moment(hurtdate).countdown().toString();
+        var since = moment(hurtdate).countdown(hurtfix).toString();
                 hurt.innerHTML = since;
 }
 

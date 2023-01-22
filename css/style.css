@@ -100,9 +100,18 @@
 	}
 
 		.window img {
-			filter:					drop-shadow(0 0 0.75rem #000a);
-			width:					50%;
+			filter:				drop-shadow(0 0 0.75rem #000a);
+			width:				50%;
 		}
+	
+	.fixed {
+		animation:				pop 0.60s infinite;
+		position:				absolute;
+		top:					0%;
+		right:					-5%;
+		font-size:				2em;
+		rotate:					25deg;
+	}
 
 /* IDs */
 	#birchforest {background:linear-gradient(#0008,#0008),url(../img/birch-bg.png);background-size:cover;background-position:center;}
@@ -114,11 +123,12 @@
 	#fletchingtable {background:linear-gradient(#0008,#0008),url(../img/fletch-bg.jpg);background-size:cover;background-position:center;}
 	#biome18 {background:linear-gradient(#0008,#0008),url(../img/b18-bg.jpg);background-size:cover;background-position:center;}
 	#modsupport {background:linear-gradient(#0008,#0008),url(../img/mod-bg.png);background-size:cover;background-position:center;}
-	#hurtanim {background:linear-gradient(#0008,#0008),url(../img/hurt-bg.png);background-size:cover;background-position:center;}
+	#hurtanim {background:linear-gradient(#0008,#0008),url(../img/hurt-bg.png);background-size:cover;background-position:center;position:relative;overflow:show;}
 
 /* Responsive Design */
 	@media screen and (max-width: 725px) {
 		time {font-size:2em;}
 		footer {width:70vw !important;}
 		.window {width:90vw;}
+		.fixed {right: 0%;}
 	}
