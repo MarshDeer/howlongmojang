@@ -5,6 +5,13 @@
 ## Demo Link
 [Live Demo](http://MarshDeer.github.io/howlongmojang)
 
+## Link here!
+Wanna link to here? Copy this codeblock into your website to use the official 88x31 button!
+<img src="img/button.gif">
+```html
+<a href="https://lensdeer.github.io/howlongmojang"><img src="https://lensdeer.github.io/howlongmojang/img/button.gif"></a>
+```
+
 ## Countdown items
 * Birch Forest overhaul
 * Fireflies
