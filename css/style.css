@@ -97,6 +97,8 @@
 		box-shadow:				1em 1em 1em #000a;
 		padding:				1em;
 		text-shadow:				1px 1px #000a;
+		position:				relative;
+		overflow:				show;
 	}
 
 		.window img {
@@ -123,7 +125,7 @@
 	#fletchingtable {background:linear-gradient(#0008,#0008),url(../img/fletch-bg.jpg);background-size:cover;background-position:center;}
 	#biome18 {background:linear-gradient(#0008,#0008),url(../img/b18-bg.jpg);background-size:cover;background-position:center;}
 	#modsupport {background:linear-gradient(#0008,#0008),url(../img/mod-bg.png);background-size:cover;background-position:center;}
-	#hurtanim {background:linear-gradient(#0008,#0008),url(../img/hurt-bg.png);background-size:cover;background-position:center;position:relative;overflow:show;}
+	#hurtanim {background:linear-gradient(#0008,#0008),url(../img/hurt-bg.png);background-size:cover;background-position:center;}
 
 /* Responsive Design */
 	@media screen and (max-width: 725px) {
