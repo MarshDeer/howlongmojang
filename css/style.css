@@ -134,3 +134,11 @@
 		.window {width:90vw;}
 		.fixed {right: 0%;}
 	}
+
+/* Accessibility */
+	@media screen and (prefers-reduced-motion) {
+		* {
+			transition: none !important;
+			animation: none !important;
+		}
+	}
