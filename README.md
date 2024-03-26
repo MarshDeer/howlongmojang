@@ -9,7 +9,7 @@
 Wanna link to here? Copy this codeblock into your website to use the official 88x31 button!
 <img src="img/button.gif">
 ```html
-<a href="https://lensdeer.github.io/howlongmojang"><img src="https://lensdeer.github.io/howlongmojang/img/button.gif"></a>
+<a href="https://marshdeer.github.io/howlongmojang"><img src="https://marshdeer.github.io/howlongmojang/img/button.gif"></a>
 ```
 
 ## Countdown items
