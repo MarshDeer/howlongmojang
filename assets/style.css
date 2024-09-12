@@ -28,13 +28,21 @@
 		width:					40vw !important;
 	}
 
+	details {
+		background: linear-gradient(#0007, #000c), var(--background);
+		background-size: cover;
+	}
+
 	details summary {
 		list-style:				none;
 		animation:				none !important;
+		display: flex;
+		flex-direction: column;
 	}
 
 	details[open] *|*:not(summary *) {
 		animation:				open 0.25s;
+		backdrop-filter: blur(.5);
 	}
 
 		@keyframes open {
@@ -114,18 +122,6 @@
 		font-size:				2em;
 		rotate:					25deg;
 	}
-
-/* IDs */
-	#birchforest {background:linear-gradient(#0008,#0008),url(../img/birch-bg.png);background-size:cover;background-position:center;}
-	#fireflies {background:linear-gradient(#0008,#0008),url(../img/fire-bg.png);background-size:cover;background-position:center;}
-	#caves1 {background:linear-gradient(#0008,#0008),url(../img/cnc1-bg.png);background-size:cover;background-position:center;}
-	#caves2 {background:linear-gradient(#0008,#0008),url(../img/cnc2-bg.png);background-size:cover;background-position:center;}
-	#biome19 {background:linear-gradient(#0008,#0008),url(../img/b19-bg.png);background-size:cover;background-position:center;}
-	#combattest {background:linear-gradient(#0008,#0008),url(../img/combat-bg.png);background-size:cover;background-position:center;}
-	#fletchingtable {background:linear-gradient(#0008,#0008),url(../img/fletch-bg.jpg);background-size:cover;background-position:center;}
-	#biome18 {background:linear-gradient(#0008,#0008),url(../img/b18-bg.jpg);background-size:cover;background-position:center;}
-	#modsupport {background:linear-gradient(#0008,#0008),url(../img/mod-bg.png);background-size:cover;background-position:center;}
-	#hurtanim {background:linear-gradient(#0008,#0008),url(../img/hurt-bg.png);background-size:cover;background-position:center;}
 
 /* Responsive Design */
 	@media screen and (max-width: 725px) {
